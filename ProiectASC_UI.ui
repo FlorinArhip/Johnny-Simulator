@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>781</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1010</width>
+    <height>781</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1010</width>
+    <height>781</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>9999</width>
+     <height>9999</height>
+    </size>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QFrame" name="background_image">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>1011</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget #background_image
+{
+border-image: url(:/Background/Hintergrund.png) 0 0 0 0 stretch stretch;
+}
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="ram_adress_set">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>21</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="ram_adress_setter">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>40</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 20px;</string>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="placeholderText">
+      <string>000</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ram_position">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>110</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 30px;</string>
+     </property>
+     <property name="text">
+      <string>000</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="adress_bus">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>40</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 30px;</string>
+     </property>
+     <property name="text">
+      <string>000</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ram_lo">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>490</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 30px;</string>
+     </property>
+     <property name="text">
+      <string>000</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="data_bus_adress">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>630</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 30px;</string>
+     </property>
+     <property name="text">
+      <string>000</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="prg_counter">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>210</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 30px;</string>
+     </property>
+     <property name="text">
+      <string>000</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ins_adress">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>210</y>
+       <width>91</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 30px;
+color:blue;</string>
+     </property>
+     <property name="text">
+      <string>000</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ram_hi">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>490</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 30px;</string>
+     </property>
+     <property name="text">
+      <string>00</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ins_cmd">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>210</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 30px;
+color:red;
+</string>
+     </property>
+     <property name="text">
+      <string>00</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="data_bus_cmd">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>620</y>
+       <width>101</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 30px;</string>
+     </property>
+     <property name="text">
+      <string>00</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="data_bus_setter">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>630</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 20px;</string>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="placeholderText">
+      <string>00000</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="data_bus_set">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>610</y>
+       <width>21</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="db_to_ram">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>580</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>db-&gt;ram</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ram_to_db">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>580</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ram-&gt;db</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="db_to_ins">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>410</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>db-&gt;ins</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ins_to_mc">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>310</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ins-&gt;mc</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pc_increment_if_0">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>290</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>=0:pc++</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pc_increment">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>320</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>pc++</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="mc_reset">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>530</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>mc:=0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="acc_hi">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>310</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 30px;</string>
+     </property>
+     <property name="text">
+      <string>00</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="acc_lo">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>310</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 30px;</string>
+     </property>
+     <property name="text">
+      <string>000</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ins_to_pc">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>210</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ins-&gt;pc</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pc_to_ab">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>130</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>pc-&gt;ab</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ins_to_ab">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>130</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ins-&gt;ab</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="acc_reset">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>62</y>
+       <width>75</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>acc:=0</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="acc_inc">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>112</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>acc++</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="acc_dec">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>152</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>acc--</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="add_to_acc">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>410</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>plus</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sub_to_acc">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>450</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>minus</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="db_to_acc">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>490</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>db-&gt;acc</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="acc_to_db">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>490</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>acc-&gt;db</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="mc_table">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>400</y>
+       <width>141</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOn</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="verticalScrollMode">
+      <enum>QAbstractItemView::ScrollPerItem</enum>
+     </property>
+     <property name="showGrid">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QTableView" name="ram_info_change">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>150</y>
+       <width>231</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOn</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::SelectedClicked</set>
+     </property>
+    </widget>
+    <widget class="QTableView" name="ram_viewer">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>360</y>
+       <width>231</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOn</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="autoScrollMargin">
+      <number>16</number>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+    </widget>
+    <widget class="QFrame" name="hide_cu">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>90</y>
+       <width>371</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(191, 191, 191);
+border-width:2px;
+border-style:solid;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="color_change_if_zero">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>287</y>
+       <width>36</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 0);
+border-width:1px;
+border-style:solid;
+border-radius: 4px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <zorder>ram_adress_set</zorder>
+    <zorder>ram_adress_setter</zorder>
+    <zorder>ram_position</zorder>
+    <zorder>adress_bus</zorder>
+    <zorder>ram_lo</zorder>
+    <zorder>data_bus_adress</zorder>
+    <zorder>prg_counter</zorder>
+    <zorder>ins_adress</zorder>
+    <zorder>ram_hi</zorder>
+    <zorder>ins_cmd</zorder>
+    <zorder>data_bus_cmd</zorder>
+    <zorder>data_bus_setter</zorder>
+    <zorder>data_bus_set</zorder>
+    <zorder>db_to_ram</zorder>
+    <zorder>ram_to_db</zorder>
+    <zorder>db_to_ins</zorder>
+    <zorder>ins_to_mc</zorder>
+    <zorder>pc_increment_if_0</zorder>
+    <zorder>pc_increment</zorder>
+    <zorder>mc_reset</zorder>
+    <zorder>acc_hi</zorder>
+    <zorder>acc_lo</zorder>
+    <zorder>ins_to_pc</zorder>
+    <zorder>pc_to_ab</zorder>
+    <zorder>ins_to_ab</zorder>
+    <zorder>acc_reset</zorder>
+    <zorder>acc_inc</zorder>
+    <zorder>acc_dec</zorder>
+    <zorder>add_to_acc</zorder>
+    <zorder>sub_to_acc</zorder>
+    <zorder>db_to_acc</zorder>
+    <zorder>acc_to_db</zorder>
+    <zorder>mc_table</zorder>
+    <zorder>ram_info_change</zorder>
+    <zorder>ram_viewer</zorder>
+    <zorder>color_change_if_zero</zorder>
+    <zorder>hide_cu</zorder>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1011</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(229, 229, 229);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="new_ram">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/ButtonSprites/new_macro.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="open_ram">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>30</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/ButtonSprites/open_ram.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save_ram">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/ButtonSprites/save_ram.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="next_step">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>30</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/ButtonSprites/macro_step.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="run_macro_code">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>30</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/ButtonSprites/macro_run.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="reset_program">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>30</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/ButtonSprites/reset.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="show_control">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>20</y>
+       <width>111</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/ButtonSprites/show_command.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>40</y>
+       <width>16</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Graphiken/Graphiken/ProiectASC.qrc"/>
+ </resources>
+ <connections/>
+</ui>
